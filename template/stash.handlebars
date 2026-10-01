@@ -66,6 +66,7 @@ http:
       argument:
     - match: ^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext\?(.*)subtype=Translate
       name: 🍿️ DualSubs.YouTube.Translate.TimedText.response
+      timeout: 120
       type: response
       require-body: true
       argument:
@@ -83,11 +84,13 @@ http:
       argument:
     - match: ^https?:\/\/music\.youtube\.com\/youtubei\/v1\/browse\?(.*)subtype=Translate
       name: 🍿️ DualSubs.YouTube.Translate.TimedText.response
+      timeout: 120
       type: request
       require-body: true
       argument:
     - match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/browse\?(.*)subtype=Translate
       name: 🍿️ DualSubs.YouTube.Translate.TimedText.response
+      timeout: 120
       type: response
       require-body: true
       binary-mode: true

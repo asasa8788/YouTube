@@ -101,6 +101,10 @@ export default defineConfig({
 					key: "Microsoft",
 					label: "Microsoft Translator（需填写API）",
 				},
+				{
+					key: "DeepLX",
+					label: "DeepLX（自建，需填写Endpoint）",
+				},
 			],
 		},
 		{
