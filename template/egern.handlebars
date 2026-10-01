@@ -22,21 +22,21 @@ scriptings:
 - http_request:
     name: '🍿️ DualSubs.YouTube.Player.request.json'
     match: ^https?:\/\/(www|m|tv)\.youtube\.com\/youtubei\/v1\/player(\?.+)?$
-    script_url: https://github.com/DualSubs/YouTube/releases/download/v{{@package 'version'}}/request.bundle.js
+    script_url: https://github.com/asasa8788/YouTube/releases/download/v{{@package 'version'}}/request.bundle.js
     arguments:
       _compat.$argument: ''
     body_required: true
 - http_response:
     name: '🍿️ DualSubs.YouTube.Player.response.json'
     match: ^https?:\/\/(www|m|tv)\.youtube\.com\/youtubei\/v1\/player(\?.+)?$
-    script_url: https://github.com/DualSubs/YouTube/releases/download/v{{@package 'version'}}/response.bundle.js
+    script_url: https://github.com/asasa8788/YouTube/releases/download/v{{@package 'version'}}/response.bundle.js
     arguments:
       _compat.$argument: ''
     body_required: true
 - http_request:
     name: '🍿️ DualSubs.YouTube.Player.request.proto'
     match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player(\?.+)?$
-    script_url: https://github.com/DualSubs/YouTube/releases/download/v{{@package 'version'}}/request.bundle.js
+    script_url: https://github.com/asasa8788/YouTube/releases/download/v{{@package 'version'}}/request.bundle.js
     arguments:
       _compat.$argument: ''
     body_required: true
@@ -44,7 +44,7 @@ scriptings:
 - http_response:
     name: '🍿️ DualSubs.YouTube.Player.response.proto'
     match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player(\?.+)?$
-    script_url: https://github.com/DualSubs/YouTube/releases/download/v{{@package 'version'}}/response.bundle.js
+    script_url: https://github.com/asasa8788/YouTube/releases/download/v{{@package 'version'}}/response.bundle.js
     arguments:
       _compat.$argument: ''
     body_required: true
@@ -52,7 +52,7 @@ scriptings:
 - http_response:
     name: '🍿️ DualSubs.YouTube.GetWatch.response.proto'
     match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/get_watch(\?.+)?$
-    script_url: https://github.com/DualSubs/YouTube/releases/download/v{{@package 'version'}}/response.bundle.js
+    script_url: https://github.com/asasa8788/YouTube/releases/download/v{{@package 'version'}}/response.bundle.js
     arguments:
       _compat.$argument: ''
     body_required: true
@@ -60,35 +60,35 @@ scriptings:
 - http_request:
     name: '🍿️ DualSubs.YouTube.TimedText.request'
     match: ^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.+)?$
-    script_url: https://github.com/DualSubs/YouTube/releases/download/v{{@package 'version'}}/request.bundle.js
+    script_url: https://github.com/asasa8788/YouTube/releases/download/v{{@package 'version'}}/request.bundle.js
     arguments:
       _compat.$argument: ''
     body_required: false
 - http_response:
     name: '🍿️ DualSubs.YouTube.Composite.TimedText.response'
     match: ^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext\?(.*)subtype=(Official|External)
-    script_url: https://github.com/DualSubs/Universal/releases/latest/download/Composite.Subtitles.response.bundle.js
+    script_url: https://github.com/asasa8788/Universal/releases/download/v1.7.5+deeplx.1/Composite.Subtitles.response.bundle.js
     arguments:
       _compat.$argument: ''
     body_required: true
 - http_response:
     name: '🍿️ DualSubs.YouTube.Translate.TimedText.response'
     match: ^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext\?(.*)subtype=Translate
-    script_url: https://github.com/DualSubs/Universal/releases/latest/download/Translate.response.bundle.js
+    script_url: https://github.com/asasa8788/Universal/releases/download/v1.7.5+deeplx.1/Translate.response.bundle.js
     arguments:
       _compat.$argument: ''
     body_required: true
 - http_request:
     name: '🍿️ DualSubs.YouTubeMusic.Browse.request.json'
     match: ^https?:\/\/music\.youtube\.com\/youtubei\/v1\/browse(\?.+)?$
-    script_url: https://github.com/DualSubs/YouTube/releases/download/v{{@package 'version'}}/request.bundle.js
+    script_url: https://github.com/asasa8788/YouTube/releases/download/v{{@package 'version'}}/request.bundle.js
     arguments:
       _compat.$argument: ''
     body_required: true
 - http_request:
     name: '🍿️ DualSubs.YouTube.Browse.request.proto'
     match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/browse(\?.+)?$
-    script_url: https://github.com/DualSubs/YouTube/releases/download/v{{@package 'version'}}/request.bundle.js
+    script_url: https://github.com/asasa8788/YouTube/releases/download/v{{@package 'version'}}/request.bundle.js
     arguments:
       _compat.$argument: ''
     body_required: true
@@ -96,14 +96,14 @@ scriptings:
 - http_response:
     name: '🍿️ DualSubs.YouTubeMusic.Translate.Lyrics.response.json'
     match: ^https?:\/\/music\.youtube\.com\/youtubei\/v1\/browse\?(.*)subtype=Translate
-    script_url: https://github.com/DualSubs/Universal/releases/latest/download/Translate.response.bundle.js
+    script_url: https://github.com/asasa8788/Universal/releases/download/v1.7.5+deeplx.1/Translate.response.bundle.js
     arguments:
       _compat.$argument: ''
     body_required: true
 - http_response:
     name: '🍿️ DualSubs.YouTubeMusic.Translate.Lyrics.response.proto'
     match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/browse\?(.*)subtype=Translate
-    script_url: https://github.com/DualSubs/Universal/releases/latest/download/Translate.response.bundle.js
+    script_url: https://github.com/asasa8788/Universal/releases/download/v1.7.5+deeplx.1/Translate.response.bundle.js
     arguments:
       _compat.$argument: ''
     body_required: true
